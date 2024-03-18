@@ -26,6 +26,11 @@ func main() {
 		fmt.Println("Enter number of tickets:")
 		fmt.Scan(&userTickest)
 
+		if confrerenceRemains-userTickest < 0 {
+			fmt.Println("Number of tickets is not enough, please check again!")
+			break
+		}
+
 		fullname := firstName + " " + lastName
 
 		// add fullname into bookgings array
